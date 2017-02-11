@@ -1,3 +1,4 @@
+
 package serverbot;
 
 import java.net.*;
@@ -11,7 +12,7 @@ import cn.nukkit.event.player.PlayerChatEvent;
 import cn.nukkit.event.player.PlayerDeathEvent;
 import cn.nukkit.event.player.PlayerJoinEvent;
 import cn.nukkit.plugin.PluginBase;
-
+import cn.nukkit.event.player.PlayerQuitEvent;
 
 public class Main extends PluginBase implements Listener {
 	public final static int port = {You select Server Port};
