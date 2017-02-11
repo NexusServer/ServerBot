@@ -60,6 +60,11 @@ public class Main extends PluginBase implements Listener {
 	public void onJoin(PlayerJoinEvent event) {
 		this.sendPacket(event.getPlayer().getName() + "님이 접속하셨습니다");
 	}
+	
+	@Eventhandler
+	public void onOuit(PlayerOuitEvent event){
+		this.sendPacket(event.getPlayer().getName()+"님이 나가셨습니다");
+	}
 
 	public void sendPacket(String message) {
 		DatagramPacket packet;
